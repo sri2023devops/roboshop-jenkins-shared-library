@@ -1,30 +1,38 @@
 def call() {
     pipeline {
+
         agent {
             label 'workstation1'
         }
+
         stages {
-            stage('compile/build') {
+
+            stage('Compile/Build') {
                 steps {
-                    echo 'compute'
+                    echo 'compile'
                 }
             }
-            stage('Unit tests') {
+
+            stage('Unit Tests') {
                 steps {
-                    echo 'compute'
+                    echo 'Unit Tests'
                 }
             }
+
             stage('Quality Control') {
                 steps {
-                    echo 'compute'
+                    echo 'Quality Control'
                 }
             }
-            stage('Uplaod to centralised place') {
+
+            stage('Upload Code to Centralized Place') {
                 steps {
                     echo 'Upload'
                 }
             }
+
+
         }
 
+    }
 }
-
