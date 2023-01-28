@@ -19,7 +19,7 @@ def call() {
                     echo 'compute'
                 }
             }
-            stage('Uplaod to centralise dplace') {
+            stage('Uplaod to centralised place') {
                 steps {
                     echo 'Upload'
                 }
